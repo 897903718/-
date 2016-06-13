@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "23.0.0 rc2"
+
+    defaultConfig {
+        applicationId "chanlytech.com.laborsupervision"
+        minSdkVersion 9
+        targetSdkVersion 22
+        versionCode 27
+        versionName "1.0.2"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile project(':absframe')
+    compile project(':unicorn')
+    compile project(':ui')
+    compile files('libs/universal-image-loader-1.8.6.jar')
+    compile files('libs/MobLogCollector.jar')
+    compile files('libs/MobTools.jar')
+    compile files('libs/ShareSDK-Core-2.6.1.jar')
+    compile files('libs/ShareSDK-QQ-2.6.1.jar')
+    compile files('libs/ShareSDK-QZone-2.6.1.jar')
+    compile files('libs/ShareSDK-Wechat-2.6.1.jar')
+    compile files('libs/ShareSDK-Wechat-Core-2.6.1.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.6.1.jar')
+    compile files('libs/umeng-analytics-v5.5.3.jar')
+    compile files('libs/GetuiExt-2.0.3.jar')
+    compile files('libs/GetuiSdk2.5.0.0.jar')
+    compile files('libs/fastjson-1.1.33.jar')
+    compile files('libs/android-async-http-1.4.4.jar')
+    compile files('libs/baidumapapi_v3_5_0.jar')
+    compile files('libs/locSDK_5.2.jar')
+}
