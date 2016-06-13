@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#77000000"
+    android:id="@+id/framelayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/bg_withe_radius"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_people"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:text="普通用户"
+                android:textSize="20sp"
+                android:textColor="@color/line_gray" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_gray" />
+
+            <Button
+                android:id="@+id/btn_company"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:text="企业用户"
+                android:textSize="20sp"
+                android:textColor="@color/black" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_gray"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btn_organization"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:text="机构"
+                android:textSize="20sp"
+                android:textColor="@color/line_gray"
+                android:visibility="gone"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_gray"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btn_business"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:text="个体工商户"
+                android:textSize="20sp"
+                android:textColor="@color/line_gray"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

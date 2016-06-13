@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_head_bar" />
+
+        <chanlytech.com.laborsupervision.widget.PagerSlidingTabStrip xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            app:pstsDividerColor="@android:color/transparent"
+            app:pstsIndicatorColor="#E07318"
+            app:pstsShouldExpand="true"
+            app:selectedTabTextColor="#E07318" />
+
+
+        <chanlytech.com.laborsupervision.widget.MyViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tabs" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#77000000"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="2dp"
+            android:textSize="@dimen/sp10"
+            android:layout_marginLeft="@dimen/dp10"
+            android:textColor="@color/white"
+            android:lineSpacingExtra="1.5dp"
+            android:text="免责声明:本app所载资讯均系转载而来，如涉及第三方知识产权，
+由资讯原始发布方承担相关法律责任。" />
+    </LinearLayout>
+
+</RelativeLayout>

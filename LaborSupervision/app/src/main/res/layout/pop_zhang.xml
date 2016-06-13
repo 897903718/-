@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#77000000"
+    android:id="@+id/framelayout">
+
+    <ListView
+        android:id="@+id/list_zhang"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/dp20"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:background="@drawable/bg_withe_radius"
+        android:divider="@android:color/transparent"
+        android:listSelector="@android:color/transparent"></ListView>
+</FrameLayout>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+　　
+<html>
+　　　　
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no">
+    <title>错误页面</title>
+    <link rel="stylesheet" href="css/style.css">
+    　　　　　　
+    <script>
+　　　　　　　　function reload(){
+                      var result = AppJsInterface.reload();
+                      window.location.href=result;
+　　　　　　　　} 
+    </script>
+</head>
+<body>
+<div class="wrap">
+    <div class="icon"></div>
+    <p class="title">该页面加载失败</p>　
+    <center>
+        <span class='btn' onclick="reload()">--重新加载--</span>
+    </center>
+    　
+</div>
+</body>
+　　
+</html>

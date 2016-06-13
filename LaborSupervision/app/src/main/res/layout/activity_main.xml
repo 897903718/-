@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_below="@+id/top_bar"
+        android:paddingBottom="2dp" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/bottom_bar"
+        android:background="@color/line_gray" />
+
+    <RadioGroup
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_buttom_color"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbt_legal"
+            style="@style/MainRadioButtonStyle"
+            android:drawableTop="@drawable/selector_legal_new"
+            android:tag="0"
+            android:text="@string/information"
+            android:textColor="@color/main_test_color" />
+
+        <RadioButton
+            android:id="@+id/rbt_home"
+            style="@style/MainRadioButtonStyle"
+            android:checked="true"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/selector_legal_home"
+            android:tag="1"
+            android:text="首页"
+            android:textColor="@color/main_red" />
+        <RadioButton
+            android:id="@+id/rbt_rights"
+            style="@style/MainRadioButtonStyle"
+            android:drawableTop="@drawable/select_legal_rights"
+            android:tag="2"
+            android:text="任务"
+            android:textColor="@color/main_test_color" />
+
+        <RadioButton
+            android:id="@+id/rbt_user"
+            style="@style/MainRadioButtonStyle"
+            android:drawableTop="@drawable/selector_legal_user"
+            android:tag="3"
+            android:text="@string/userinfo"
+            android:textColor="@color/main_test_color" />
+    </RadioGroup>
+    <ImageView
+        android:id="@+id/iv_tishi"
+        android:layout_below="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/pic_dot"/>
+</RelativeLayout>

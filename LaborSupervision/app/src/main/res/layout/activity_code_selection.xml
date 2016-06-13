@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="chanlytech.com.laborsupervision.activity.CodeSelectionActivity">
+
+    <include layout="@layout/layout_head_bar" />
+
+    <ListView
+        android:id="@+id/code_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:listSelector="@android:color/transparent" />
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PullToRefresh">
+
+        <!-- A drawable to use as the background of the Refreshable View -->
+        <attr name="ptrRefreshableViewBackground" format="reference|color"/>
+
+        <!-- A drawable to use as the background of the Header and Footer Loading Views -->
+        <attr name="ptrHeaderBackground" format="reference|color"/>
+
+        <!-- Text Color of the Header and Footer Loading Views -->
+        <attr name="ptrHeaderTextColor" format="reference|color"/>
+
+        <!-- Text Color of the Header and Footer Loading Views Sub Header -->
+        <attr name="ptrHeaderSubTextColor" format="reference|color"/>
+
+        <!-- Mode of Pull-to-Refresh that should be used -->
+        <attr name="ptrMode">
+            <flag name="disabled" value="0x0"/>
+            <flag name="pullFromStart" value="0x1"/>
+            <flag name="pullFromEnd" value="0x2"/>
+            <flag name="both" value="0x3"/>
+            <flag name="manualOnly" value="0x4"/>
+
+            <!-- These last two are depreacted -->
+            <flag name="pullDownFromTop" value="0x1"/>
+            <flag name="pullUpFromBottom" value="0x2"/>
+        </attr>
+
+        <!-- Whether the Indicator overlay(s) should be used -->
+        <attr name="ptrShowIndicator" format="reference|boolean"/>
+
+        <!-- Drawable to use as Loading Indicator. Changes both Header and Footer. -->
+        <attr name="ptrDrawable" format="reference"/>
+
+        <!-- Drawable to use as Loading Indicator in the Header View. Overrides value set in ptrDrawable. -->
+        <attr name="ptrDrawableStart" format="reference"/>
+
+        <!-- Drawable to use as Loading Indicator in the Footer View. Overrides value set in ptrDrawable. -->
+        <attr name="ptrDrawableEnd" format="reference"/>
+
+        <!-- Whether Android's built-in Over Scroll should be utilised for Pull-to-Refresh. -->
+        <attr name="ptrOverScroll" format="reference|boolean"/>
+
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views -->
+        <attr name="ptrHeaderTextAppearance" format="reference"/>
+
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views Sub Header -->
+        <attr name="ptrSubHeaderTextAppearance" format="reference"/>
+
+        <!-- Style of Animation should be used displayed when pulling. -->
+        <attr name="ptrAnimationStyle">
+            <flag name="rotate" value="0x0"/>
+            <flag name="flip" value="0x1"/>
+        </attr>
+
+        <!-- Whether the user can scroll while the View is Refreshing -->
+        <attr name="ptrScrollingWhileRefreshingEnabled" format="reference|boolean"/>
+
+        <!--
+        	Whether PullToRefreshListView has it's extras enabled. This allows the user to be 
+        	able to scroll while refreshing, and behaves better. It acheives this by adding
+        	Header and/or Footer Views to the ListView.
+        -->
+        <attr name="ptrListViewExtrasEnabled" format="reference|boolean"/>
+
+        <!--
+        	Whether the Drawable should be continually rotated as you pull. This only
+        	takes effect when using the 'Rotate' Animation Style.
+        -->
+        <attr name="ptrRotateDrawableWhilePulling" format="reference|boolean"/>
+
+        <!-- BELOW HERE ARE DEPRECEATED. DO NOT USE. -->
+        <attr name="ptrAdapterViewBackground" format="reference|color"/>
+        <attr name="ptrDrawableTop" format="reference"/>
+        <attr name="ptrDrawableBottom" format="reference"/>
+    </declare-styleable>
+
+    <!-- 圆形的动画进度条 -->
+    <declare-styleable name="CircleProgressBar">
+        <attr name="progress_value" format="float"/>
+        <attr name="center_angle" format="float"/>
+        <attr name="space_angle" format="float"/>
+        <attr name="background_color" format="color"/>
+        <attr name="progress_color" format="color"/>
+        <attr name="background_alpha" format="float"/>
+        <attr name="progress_alpha" format="float"/>
+        <attr name="progress_duration" format="float"/>
+        <attr name="progress_width" format="dimension"/>
+    </declare-styleable>
+    <!-- 横向的指示器 -->
+    <declare-styleable name="HorizontalIndicator">
+        <!-- 正常的图片（使用这样的图片，方便扩展指示器的动画效果） -->
+        <attr name="normal_image" format="reference"/>
+        <!-- 选中的图片（使用这样的图片，方便扩展指示器的动画效果） -->
+        <attr name="select_image" format="reference"/>
+        <attr name="padding_left" format="dimension"/>
+        <attr name="padding_top" format="dimension"/>
+        <attr name="padding_right" format="dimension"/>
+        <attr name="padding_bottom" format="dimension"/>
+    </declare-styleable>
+    <!-- 环绕图片旋转的图片 -->
+    <declare-styleable name="SurroundRotateImageView">
+        <attr name="drawable_normal" format="reference"/>
+        <attr name="drawable_rotate" format="reference"/>
+        <attr name="drawable_press" format="reference"/>
+    </declare-styleable>
+    <!-- 可以设置宽高比的RelativeLayout -->
+    <declare-styleable name="WidthHeightRelativeLayout">
+        <attr name="width_weight" format="float"/>
+        <attr name="extract_width" format="dimension"/>
+        <attr name="height_weight" format="float"/>
+        <attr name="extract_height" format="dimension"/>
+    </declare-styleable>
+    <!-- 右下角包含一个按钮的布局 -->
+    <declare-styleable name="FrameTopLayout">
+        <attr name="right_margin" format="dimension"/>
+        <attr name="bottom_margin" format="dimension"/>
+        <attr name="drawable" format="reference"/>
+    </declare-styleable>
+</resources>

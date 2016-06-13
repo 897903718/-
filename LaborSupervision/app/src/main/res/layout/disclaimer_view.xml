@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/framelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#77000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:background="@drawable/bg_withe_radius"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp10"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10"
+            android:paddingTop="@dimen/dp10"
+            android:text="免责声明"
+            android:textColor="@color/red"
+            android:textSize="@dimen/sp20" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layerType="software"
+            android:background="@drawable/dash_line"></View>
+
+        <TextView
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:text="     1.用户在下载并使用本app时，均应当仔细阅读本app所包含的相关免责声明或提示。凡以任何方式直接或间接使用app服务者，均被视为自愿认可本app相关免责条款。"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp15" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="@dimen/dp10"
+            android:text="   2.本app相关版权/服务内容/免责声明的修改权/更新权/最终解释权均属app开发方所有"
+            android:textColor="@color/black" />
+
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@drawable/btn_bg"
+            android:text="我知道了"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp15" />
+    </LinearLayout>
+
+</FrameLayout>

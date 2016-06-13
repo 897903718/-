@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include
+        layout="@layout/title"/>
+    <LinearLayout
+        android:id="@+id/buttom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_gray"/>
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/dp10"
+            android:paddingLeft="@dimen/dp10"
+            android:textSize="@dimen/sp18"
+            android:textStyle="bold"
+            android:text="aaaa"
+           />
+        <TextView
+            android:id="@+id/tv_addr"
+            android:layout_width="wrap_content"
+            android:paddingLeft="@dimen/dp10"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_gray_color"
+            android:textSize="@dimen/sp14"
+            android:text="aaa"
+            android:layout_marginTop="@dimen/dp10"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/line_gray"/>
+        <RelativeLayout
+            android:id="@+id/rl_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_navigation"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/navigation"/>
+            <TextView
+                android:id="@+id/tv_navigation"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                android:text="查看线路及周边"
+                android:textSize="@dimen/sp15"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_below="@+id/title"
+        android:layout_above="@+id/buttom"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+
+</RelativeLayout>

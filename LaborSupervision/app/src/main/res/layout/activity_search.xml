@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:background="@color/coffee">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:scaleType="center"
+            android:src="@mipmap/ic_back" />
+
+
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="关键字筛选"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp20" />
+    </RelativeLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <chanlytech.com.laborsupervision.widget.XCFlowLayout
+            android:id="@+id/lineView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@drawable/bg_withe_radius"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:background="@drawable/bg_withe_radius"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="没有符合您需求的关键字吗？"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginLeft="@dimen/dp10"/>
+            <TextView
+                android:textSize="@dimen/sp15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:text="因国家法律法典的用语专业严肃，与普通读物性质不同，难于实现模糊语或白话词搜索匹配，您可提供想了解的某一事例关键词，我们将进行提炼，完善实用的索引引导。"/>
+            <EditText
+                android:id="@+id/et_put"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:maxLength="10"
+                android:textColor="@color/black"
+                android:paddingLeft="@dimen/dp10"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@drawable/bg_grey_radius"
+                android:hint="（10个字以内）"/>
+            <Button
+                android:id="@+id/btn_put"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40"
+                android:background="@drawable/bg_red_radius"
+                android:text="提交"
+                android:textSize="@dimen/sp15"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp20"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+</LinearLayout>
